@@ -1,0 +1,180 @@
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_positive_auth_user (setup)
+Time: 2021-12-08 02:21:01.939039
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_positive_auth_user (call)
+Time: 2021-12-08 02:21:02.203963
+Request method: GET
+Request URL: https://playground.learnqa.ru/api/user/auth
+Request data: None
+Request headers: {'x-csrf-token': '042f3122743b05affc42862d5ffff8cf692d551702e94918f1549272bcf2cafc2634fd9d'}
+Request cookies: {'auth_sid': 'eb0d12a062bb3f12140a415ae8d0f50202e94918f1549272bcf2cafc2634fd9d'}
+
+
+-----
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_negative_auth_check[no_cookie] (setup)
+Time: 2021-12-08 02:21:02.440562
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_negative_auth_check[no_cookie] (call)
+Time: 2021-12-08 02:21:02.677335
+Request method: GET
+Request URL: https://playground.learnqa.ru/api/user/auth
+Request data: None
+Request headers: {'x-csrf-token': '67b9dcb6a33ff57ca010ac5d32b889087686006502e94918f1549272bcf2cafc2634fd9d'}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_negative_auth_check[no_token] (setup)
+Time: 2021-12-08 02:21:02.935618
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_negative_auth_check[no_token] (call)
+Time: 2021-12-08 02:21:03.053501
+Request method: GET
+Request URL: https://playground.learnqa.ru/api/user/auth
+Request data: None
+Request headers: {}
+Request cookies: {'auth_sid': '9e0e8c698b679779fee642bb12c94d9302e94918f1549272bcf2cafc2634fd9d'}
+
+
+-----
+
+-----
+Test: tests/test_user_edit.py::TestUserEdit::test_edit_just_created_user (call)
+Time: 2021-12-08 02:21:03.371027
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/
+Request data: {'password': '123', 'username': 'learnqa', 'firstName': 'learnqa', 'lastName': 'learnqa', 'email': 'learnqa12082021022103@example.com'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_edit.py::TestUserEdit::test_edit_just_created_user (call)
+Time: 2021-12-08 02:21:04.028722
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'learnqa12082021022103@example.com', 'password': '123'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_edit.py::TestUserEdit::test_edit_just_created_user (call)
+Time: 2021-12-08 02:21:04.173068
+Request method: PUT
+Request URL: https://playground.learnqa.ru/api/user/19492
+Request data: {'firstName': 'Changed Name'}
+Request headers: {'x-csrf-token': '97ed8bbe8b0bdd822672041a02f39559a6c1a5b98caf4be4bed022b61da93f39a609cfee'}
+Request cookies: {'auth_sid': '1513242eaab2d5bc8559094483e464c98caf4be4bed022b61da93f39a609cfee'}
+
+
+-----
+
+-----
+Test: tests/test_user_edit.py::TestUserEdit::test_edit_just_created_user (call)
+Time: 2021-12-08 02:21:04.869475
+Request method: GET
+Request URL: https://playground.learnqa.ru/api/user/19492
+Request data: None
+Request headers: {'x-csrf-token': '97ed8bbe8b0bdd822672041a02f39559a6c1a5b98caf4be4bed022b61da93f39a609cfee'}
+Request cookies: {'auth_sid': '1513242eaab2d5bc8559094483e464c98caf4be4bed022b61da93f39a609cfee'}
+
+
+-----
+
+-----
+Test: tests/test_user_get.py::TestUserGet::test_get_user_details_not_auth (call)
+Time: 2021-12-08 02:21:05.509208
+Request method: GET
+Request URL: https://playground.learnqa.ru/api/user/2
+Request data: None
+Request headers: {}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_get.py::TestUserGet::test_get_user_details_auth_as_same_user (call)
+Time: 2021-12-08 02:21:06.217382
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_get.py::TestUserGet::test_get_user_details_auth_as_same_user (call)
+Time: 2021-12-08 02:21:06.336390
+Request method: GET
+Request URL: https://playground.learnqa.ru/api/user/2
+Request data: None
+Request headers: {'x-csrf-token': '0b60f00cd3e1b279968910e328ff73473a304ace02e94918f1549272bcf2cafc2634fd9d'}
+Request cookies: {'auth_sid': '17efc803c8803e90c4ef783d7abdaa9002e94918f1549272bcf2cafc2634fd9d'}
+
+
+-----
+
+-----
+Test: tests/test_user_register.py::TestUserRegister::test_create_user_successfully (call)
+Time: 2021-12-08 02:21:07.043091
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/
+Request data: {'password': '123', 'username': 'learnqa', 'firstName': 'learnqa', 'lastName': 'learnqa', 'email': 'learnqa12082021022107@example.com'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_register.py::TestUserRegister::test_create_user_with_existing_email (call)
+Time: 2021-12-08 02:21:07.698244
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/
+Request data: {'password': '123', 'username': 'learnqa', 'firstName': 'learnqa', 'lastName': 'learnqa', 'email': 'vinkotov@example.com'}
+Request headers: {}
+Request cookies: {}
+
+
+-----

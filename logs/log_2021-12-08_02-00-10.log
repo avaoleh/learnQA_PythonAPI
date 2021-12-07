@@ -1,0 +1,72 @@
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_positive_auth_user (setup)
+Time: 2021-12-08 02:00:10.709782
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_positive_auth_user (call)
+Time: 2021-12-08 02:00:11.194698
+Request method: GET
+Request URL: https://playground.learnqa.ru/api/user/auth
+Request data: None
+Request headers: {'x-csrf-token': '7e3f04eb99577e4836a70e99cbdb3fd398ac07dd02e94918f1549272bcf2cafc2634fd9d'}
+Request cookies: {'auth_sid': 'e9d767ec0e1c892130ea83750f49e80d02e94918f1549272bcf2cafc2634fd9d'}
+
+
+-----
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_negative_auth_check[no_cookie] (setup)
+Time: 2021-12-08 02:00:11.393088
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_negative_auth_check[no_cookie] (call)
+Time: 2021-12-08 02:00:11.596509
+Request method: GET
+Request URL: https://playground.learnqa.ru/api/user/auth
+Request data: None
+Request headers: {'x-csrf-token': 'd2743c178cb95dbf9af64e60c8e25d917f1de79f02e94918f1549272bcf2cafc2634fd9d'}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_negative_auth_check[no_token] (setup)
+Time: 2021-12-08 02:00:11.863699
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request data: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request headers: {}
+Request cookies: {}
+
+
+-----
+
+-----
+Test: tests/test_user_auth.py::TestUserAuth::test_negative_auth_check[no_token] (call)
+Time: 2021-12-08 02:00:11.996429
+Request method: GET
+Request URL: https://playground.learnqa.ru/api/user/auth
+Request data: None
+Request headers: {}
+Request cookies: {'auth_sid': 'abe11234d19c91648a289b8349331ebd02e94918f1549272bcf2cafc2634fd9d'}
+
+
+-----
